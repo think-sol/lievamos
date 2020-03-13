@@ -1,0 +1,119 @@
+.Login-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+}
+.Login-container .Login-body-container{
+    width: 90%;
+    display: flex;
+}
+.Login-container .Login-body-container .Login-form{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.Login-container .Login-body-container .Login-form .form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.Login-container .Login-body-container .Login-form .form .logo{
+    width: 200px;
+    height: 200px;
+}
+.Login-container .Login-body-container .Login-form .form h1{
+    font-family: Gotham Pro;
+    font-size: 50px;
+}
+.Login-container .Login-body-container .Login-form .form .input{
+    width: 100%;
+    border:none;
+    border-bottom:solid 2px orange;
+    height:25px;
+    font-size:20px;
+}
+.Login-container .Login-body-container .Login-form .form .input:focus{
+    outline: none;
+}
+
+.Login-container .Login-body-container .Login-form .form .btn{
+    align-self: flex-start;
+    width:250px;
+    margin-top: 20px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    font-size: 20px;
+    font-family: Gotham Pro;
+    font-weight: bold;
+    background: linear-gradient(to left,#128a30 50%,#76ac11 100%);
+    color: white;  
+}
+.Login-container .Login-body-container .Login-form .form .btn:focus{
+    outline: none; 
+}
+
+.Login-container .Login-body-container .side-image{
+    width:50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.Login-container .Login-body-container .side-image .image-container{
+    width:600px;
+    height: 600px;
+}
+
+@media(max-width:1200px)
+{
+    .Login-container .Login-body-container{
+        width: 100%;
+    }
+}
+@media(max-width:1024px)
+{
+    .Login-container .Login-body-container .side-image .image-container{
+
+        width:500px;
+        height: 500px;
+
+    }
+}
+
+@media(max-width:768px)
+{
+    .Login-container .Login-body-container .Login-form{
+        width: 50%;
+    }
+    .Login-container .Login-body-container .side-image{
+        width:50%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .Login-container .Login-body-container .side-image .image-container{
+
+        width:350px;
+        height: 350px;
+
+    }
+    .Login-container .Login-body-container .Login-form .form .logo{
+        width: 150px;
+        height: 150px;
+    }
+    .Login-container .Login-body-container .Login-form .form h1{
+        font-family: Gotham Pro;
+        font-size: 40px;
+    }
+}
+@media(max-width:576px)
+{
+    .Login-container .Login-body-container .side-image{
+        display: none;
+    }
+    .Login-container .Login-body-container .Login-form{
+        width: 100%;
+    }
+}
